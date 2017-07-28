@@ -44,7 +44,7 @@ public class CellTest {
     // Tries out a 3x3 cell array. Hopefully nothing crashes.
     @Test
     public void test6() {
-        boolean [][] allAlive = {{true,true,false}, {true,false,true}, {false, true,true}};
+        boolean [][] allAlive = {{true,true,true, true}, {true,true,true,true}, {true, true,true,true}, {true,true,true,true}};
         allAlive = advanceGeneration(allAlive);
 
         assertFalse(Arrays.deepToString(allAlive), true);
